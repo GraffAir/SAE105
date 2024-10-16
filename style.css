@@ -3,9 +3,7 @@
 	src: url(pieces_of_eight/Pieces\ of\ Eight.ttf);
 }
 
-body {
-	margin: 0;
-}
+
 
 main {
 	background-color: #0e1922;
@@ -82,7 +80,6 @@ nav ul li:not(:hover)>ul {
 	transition: max-height 0.3s ease-out;
 }
 
-
 nav ul li a,
 .button-gold>a {
 	padding: 15px 20px;
@@ -96,6 +93,7 @@ nav ul ul li a {
 
 #fin {
 	margin-top: 18%;
+	margin-bottom: 0;
 }
 
 #début {
@@ -152,12 +150,11 @@ header {
 	height: auto;
 }
 
-
+body,
+h2,
 p {
 	margin: 0;
-	color: black;
 }
-
 
 .left {
 	float: left;
