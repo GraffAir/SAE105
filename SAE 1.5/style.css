@@ -140,7 +140,9 @@ header {
 	top: 0;
 }
 
-
+.intro-section {
+	display: flex;
+}
 .triple-image {
 	width: 30%;
 	height: auto;
