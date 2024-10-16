@@ -46,11 +46,14 @@ nav ul li a,
 	display: block;
 }
 
-
 nav ul li,
 .button-gold {
-	position: relative;
 	display: inline-block;
+
+}
+
+nav ul li {
+	position: relative;
 }
 
 
