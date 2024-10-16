@@ -3,6 +3,9 @@
 	src: url(pieces_of_eight/Pieces\ of\ Eight.ttf);
 }
 
+footer {
+	padding: 3%;
+}
 
 
 main {
@@ -13,7 +16,7 @@ nav {
 	margin: auto;
 }
 
-nav li {
+nav li {3%
 	font-family: "Pieces of Eight";
 	font-size: 20px;
 }
