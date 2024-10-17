@@ -5,29 +5,53 @@
 
 body {
     margin: 0;
+
+    --rouge-pirate: #c92c51;
+
+    --gris-eclipse: #3c3336;
+    --gris-matin: #958d8a;
+
+    --bleu-lune: #83a8be;
+    --bleu-lune-sombre: #83a8be;
+    --bleu-lune-obscure: #284c60;
 }
 
 main {
-    background-color: #e5dece;
+    background-color: #000;
 }
 
+.parchemin {
+  background-image: radial-gradient(var(--bleu-lune-obscure), var(--bleu-lune-obscure));
+  color: var(--rouge-pirate);
+  display: flex;
+  margin: 1em;
+  padding: 1em;
+  border-radius: 7px;
+  box-shadow: 0 0 1em black;
+  color-scheme: light;
+  text-shadow: none;
+}
+
+
+/* BARRE DE NAVIGATION */
 nav {
     margin: auto;
 }
 
-nav li {
+nav li, .button-gold {
     font-family: "Pieces of Eight";
     font-size: 20px;
 }
+
 
 nav > ul > li,
 .button-gold {
     z-index: 2349;
     border-radius: .3em;
     text-transform: uppercase;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 
-                0 3px 6px rgba(110, 80, 20, .4), 
-                inset 0 -2px 5px 1px rgba(139, 66, 8, 1), 
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16),
+                0 3px 6px rgba(110, 80, 20, .4),
+                inset 0 -2px 5px 1px rgba(139, 66, 8, 1),
                 inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
     background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
     border: 1px solid #a55d07;
@@ -78,6 +102,27 @@ nav ul ul li a {
     color: black;
 }
 
+.section-accroche {
+  color:#fdfdfd;
+
+  background-image: url("images/fond.webp");
+  background-size: cover;
+
+  height:800px;
+
+}
+
+.section-accroche > div {
+  position:absolute;
+  top:30%;
+  margin-left: 50%;
+}
+
+.section-accroche > div > h1 {
+  background-color:var(--rouge-pirate);
+  padding:4px;
+}
+
 #fin {
     margin-top: 18%;
 }
@@ -93,18 +138,6 @@ nav ul ul li a {
     position: relative;
 }
 
-article {
-    background-image: radial-gradient(#f8e2d3, #c7b19b);
-    color: #583e23;
-    display: flex;
-    margin: 1em;
-    padding: 1em;
-    border-radius: 7px;
-    box-shadow: 0 0 1em black;
-    color-scheme: light;
-    text-shadow: none;
-}
-
 #milieu {
     height: 400px;
 }
@@ -115,21 +148,15 @@ article > p {
 
 #logo {
     padding: 20px;
-    width: 11%;
+    width: 7%;
     height: auto;
-}
-
-header,
-footer,
-nav ul ul {
-    background-color: #e5dece;
 }
 
 header {
     display: flex;
-    position: sticky;
+    position: fixed;
     top: 0;
-    z-index: 50;
+    z-index: 30;
 }
 
 .triple-image {
