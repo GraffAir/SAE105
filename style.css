@@ -12,8 +12,9 @@ body {
     --gris-matin: #958d8a;
 
     --bleu-lune: #83a8be;
-    --bleu-lune-sombre: #83a8be;
-    --bleu-lune-obscure: #284c60;
+    --bleu-lune-obscur: #284c60;
+    --bleu-lune-obscur-transparent: rgba(40, 76, 96, 0.7);
+
 }
 
 main {
@@ -21,15 +22,16 @@ main {
 }
 
 .parchemin {
-  background-image: radial-gradient(var(--bleu-lune-obscure), var(--bleu-lune-obscure));
-  color: var(--rouge-pirate);
-  display: flex;
-  margin: 1em;
-  padding: 1em;
-  border-radius: 7px;
-  box-shadow: 0 0 1em black;
-  color-scheme: light;
-  text-shadow: none;
+    background-image: url("images/parchemin.png");
+    background-size: 100% 100%; /* Adapte la taille de l'image à la div */
+
+
+
+    margin: 1em 0;
+    padding: 3.5em 8em;
+    box-shadow: 0 0 1em black;
+    color-scheme: light;
+    text-shadow: none;
 }
 
 
@@ -38,35 +40,34 @@ nav {
     margin: auto;
 }
 
-nav li, .button-gold {
+nav li,
+.button-gold {
     font-family: "Pieces of Eight";
     font-size: 20px;
 }
 
 
-nav > ul > li,
+nav>ul>li,
 .button-gold {
-    z-index: 2349;
     border-radius: .3em;
     text-transform: uppercase;
     box-shadow: 0 3px 6px rgba(0, 0, 0, .16),
-                0 3px 6px rgba(110, 80, 20, .4),
-                inset 0 -2px 5px 1px rgba(139, 66, 8, 1),
-                inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
+        0 3px 6px rgba(110, 80, 20, .4),
+        inset 0 -2px 5px 1px rgba(139, 66, 8, 1),
+        inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
     background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
     border: 1px solid #a55d07;
     text-shadow: 0 2px 2px rgba(250, 227, 133, 1);
 }
 
 nav ul li a,
-.button-gold > a {
+.button-gold>a {
     padding: 15px 20px;
     color: black;
     display: block;
 }
 
-nav ul li,
-.button-gold {
+nav ul li {
     position: relative;
     display: inline-block;
 }
@@ -87,12 +88,12 @@ nav ul ul {
     transition: max-height 1s ease-out;
 }
 
-nav ul li:hover > ul {
+nav ul li:hover>ul {
     max-height: 200px;
     transition: max-height 1s ease-in;
 }
 
-nav ul li:not(:hover) > ul {
+nav ul li:not(:hover)>ul {
     max-height: 0;
     transition: max-height 0.3s ease-out;
 }
@@ -103,32 +104,28 @@ nav ul ul li a {
 }
 
 .section-accroche {
-  color:#fdfdfd;
+    color: #fdfdfd;
 
-  background-image: url("images/fond.webp");
-  background-size: cover;
+    background-image: url("images/fond.webp");
+    background-size: cover;
 
-  height:800px;
+    height: 800px;
 
 }
 
-.section-accroche > div {
-  position:absolute;
-  top:30%;
-  margin-left: 50%;
+.section-accroche>div {
+    position: absolute;
+    top: 30%;
+    margin-left: 50%;
 }
 
-.section-accroche > div > h1 {
-  background-color:var(--rouge-pirate);
-  padding:4px;
+.section-accroche>div>h1 {
+    background-color: var(--rouge-pirate);
+    padding: 4px;
 }
 
 #fin {
     margin-top: 18%;
-}
-
-#début {
-    margin-top: 0;
 }
 
 #img-banniere {
@@ -142,7 +139,7 @@ nav ul ul li a {
     height: 400px;
 }
 
-article > p {
+article>p {
     padding: 3%;
 }
 
@@ -157,6 +154,10 @@ header {
     position: fixed;
     top: 0;
     z-index: 30;
+    background-color: var(--bleu-lune-obscur-transparent);
+    /* Utilise la couleur personnalisée */
+    backdrop-filter: blur(10px);
+    /* Applique un flou de 10px à l'arrière-plan */
 }
 
 .triple-image {
@@ -166,11 +167,22 @@ header {
 
 p {
     margin: 0;
-    color: black;
 }
 
 footer {
-    height: 50px;
+    background-color: var(--bleu-lune-obscur);
+}
+
+
+footer ul {
+    margin: 0;
+}
+
+
+p,
+footer,
+footer a {
+    color: white;
 }
 
 .left {
@@ -226,7 +238,7 @@ footer {
         margin: 5px 0;
     }
 
-    article > p {
+    article>p {
         padding: 5%;
     }
 
