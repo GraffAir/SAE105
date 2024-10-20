@@ -3,6 +3,10 @@
     src: url(fonts/PiecesOfEight.ttf);
 }
 
+html {
+    scroll-padding-top: 20%;
+}
+
 body {
     margin: 0;
     --rouge-pirate: #c92c51;
@@ -24,10 +28,6 @@ article>section {
 
 header ul {
     background-color: var(--bleu-lune-obscur);
-}
-
-main {
-    scroll-padding-top: 50px;
 }
 
 
