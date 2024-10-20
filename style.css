@@ -1,7 +1,8 @@
 @font-face {
     font-family: "Pieces of Eight";
-    src: url(pieces_of_eight/Pieces\ of\ Eight.ttf);
+    src: url(fonts/PiecesOfEight.ttf);
 }
+
 
 body {
     margin: 0;
@@ -15,10 +16,47 @@ body {
     --bleu-lune-obscur: #284c60;
     --bleu-lune-obscur-transparent: rgba(40, 76, 96, 0.7);
 
+    background-color: #01111a;
+    color:white;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14pt;
+
+
 }
 
-main {
-    background-color: #000;
+.section-contenu {
+    margin: 10%;
+}
+
+.planche {
+    background-image: url("images/planche.png");
+    background-size:100% 100%;
+    padding:30px 50px;
+}
+
+.texte-colonne {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.texte-colonne img {
+    height:100%;
+}
+
+.texte-colonne p {
+    width:70%;
+}
+
+.texte-colonne-gauche {
+    text-align: right;
+}
+
+.images-carousel {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .parchemin {
@@ -122,10 +160,6 @@ nav ul ul li a {
 .section-accroche>div>h1 {
     background-color: var(--rouge-pirate);
     padding: 4px;
-}
-
-#fin {
-    margin-top: 18%;
 }
 
 #img-banniere {
