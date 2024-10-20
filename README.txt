@@ -3,6 +3,7 @@ https://webinfo.iutmontp.univ-montp2.fr/~graffr/SAE105/
 Hatim (25%)
 - Mise en page (conception)
 - Flexbox
+- Aide sur le squelette du HTML
 
 Aaron (25%)
 - Mise en commun du CSS et HTML
